@@ -19,4 +19,4 @@ Custom UI components like dropdown menus are vital in modern web development. Th
 - **No External Dependencies:** Utilizes vanilla HTML, CSS, and JavaScript—ideal for learning and customization.
 
 ## project url
-https://github.com/MosesKerempe/Dropdown_Menu.git
+https://github.com/MosesKerempe/Dropdown_Menu
