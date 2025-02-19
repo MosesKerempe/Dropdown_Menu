@@ -1,0 +1,119 @@
+/* Basic page styling */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #f5f7fa;
+    margin: 40px;
+    color: #333;
+  }
+  
+  /* Friendly heading style */
+  h1 {
+    color: #007acc;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    user-select: none;
+    /* Add a subtle box shadow and border radius for a friendlier look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  
+  /* The clickable area (placeholder + arrow) */
+  .dropdown-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #a9dafc; /* A light, friendly border color */
+    background-color: #fff;
+  }
+  
+  /* The arrow (caret) */
+  .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #007acc; /* Match heading color */
+    transition: transform 0.2s ease;
+  }
+  
+  /* Dropdown menu (initially hidden) */
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    border: 1px solid #a9dafc;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    transition: max-height 0.3s ease;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+  
+  /* Open state: show the dropdown */
+  .dropdown.open .dropdown-options {
+    max-height: 300px; /* Enough to show all items comfortably */
+    overflow-y: auto;
+  }
+  
+  /* Rotate the arrow when dropdown is open */
+  .dropdown.open .arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown option styling */
+  .dropdown-option {
+    padding: 10px 12px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Hover effect for each option */
+  .dropdown-option:hover {
+    background-color: #e2f0fb; /* A soft hover color */
+  }
+  
+  /* Highlight the selected option with a check mark and a light background */
+  .dropdown-option.selected {
+    background-color: #d0e4fe;
+  }
+  
+  /* Add a check mark on the right side of the selected option */
+  .dropdown-option.selected::after {
+    content: "✓";
+    position: absolute;
+    right: 10px;
+    color: #333;
+  }
+  
+  /* Content container styling */
+  .content-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #a9dafc;
+    border-radius: 6px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

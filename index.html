@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friendly Dropdown Example</title>
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <h1>Welcome to My Friendly Dropdown!</h1>
+  <p>Select an item from the dropdown to see some cheerful content. Have a wonderful day!</p>
+
+  <!-- Dropdown Container -->
+  <div class="dropdown" id="customDropdown">
+    <!-- The clickable area (placeholder + arrow) -->
+    <div class="dropdown-selected" id="dropdownSelected">
+      <span class="selected-text" id="selectedText">Select an Item</span>
+      <span class="arrow"></span>
+    </div>
+
+    <!-- The dropdown menu (initially hidden) -->
+    <div class="dropdown-options" id="dropdownOptions">
+      <div class="dropdown-option" data-value="1">First Item</div>
+      <div class="dropdown-option" data-value="2">Second Item</div>
+      <div class="dropdown-option" data-value="3">Third Item</div>
+      <div class="dropdown-option" data-value="4">Fourth Item</div>
+      <div class="dropdown-option" data-value="5">Fifth Item</div>
+    </div>
+  </div>
+
+  <!-- A container to display the selected content -->
+  <div id="contentContainer" class="content-container">
+    <!-- Content for each selected item will appear here -->
+  </div>
+
+  <!-- Link to your external JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+</html>
